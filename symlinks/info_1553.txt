@@ -1,0 +1,17 @@
+Last 4 of ID: 1553
+First name Last initial: Brandon S.
+Skills: 
+    Clean code 
+    Efficient documentation 
+    Using new languges and tools
+    Merging conflicts 
+    Python, Java, C
+Preferred roles:
+    Lead Dev
+    Designer/planner
+    Client bridge/Client focused design
+    Documentation writer
+My website: 
+    https://bsiscoe.github.io/MAGE    
+    
+
