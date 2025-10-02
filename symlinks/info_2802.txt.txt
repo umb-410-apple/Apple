@@ -1,0 +1,24 @@
+1. Last four digits of student ID:
+- 2802
+
+2. First name and last initial:
+- Liam W.
+
+3. Skills:
+- Windows
+- Linux
+- Excel
+- Python
+- Java
+- C
+- HTML/CSS
+- JavaScript (three.js)
+- PowerShell
+- Racket
+- SQL
+
+4. Preferred Roles:
+- Designer (e.g. Figma)
+- Frontend Developer (HTML/CSS/JavaScript)
+- Scripting (PowerShell, Python)
+- Tester
