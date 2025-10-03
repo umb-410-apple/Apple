@@ -2,73 +2,152 @@
     <head>
         <meta charset="UTF-8">
         <title>Apple Corp</title>
-        <style>
+        <!-- This is needed for the Rubik font to work, from Google Fonts -->
+    	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+		<!-- This is needed for icons, hosted by Font Awesome -->
+    	<script src="https://kit.fontawesome.com/68f1cdffaa.js" crossorigin="anonymous"></script>
+		<style>
+			html {
+				scroll-behavior: smooth;
+				overflow: auto;
+			}
+
 			body {
 				margin: 0;
 				padding: 0;
+				font-family: 'Rubik', sans-serif, serif;
+				color: white;
 			}
 
-            #main_title {
-                text-align: center;
-                font-size: 28pt;
-            }
-
-            h3 {
-                font-size: 20pt;
-            }
+            h1 {
+				text-align: center;
+			}
 
             p {
                 font-size: 16pt;
                 font-weight: normal;
-				margin-bottom: 1000px; /* For testing */
 				scroll-margin-top: 80px;
             }
 
-	    .nav-bar {
-		    	display: flex;
-    			align-items:  center;
-    			justify-content: center;
-    			gap: 6vw;
-    			height: 75px;
-    			width: 100%;
-    			position: sticky;
-    			top: 0;
-    			background-color: red;
-    			border-bottom: 1px solid#8b8b8b;
-    			font-size: 18px;
+			a {
+				color: white;
+			}
+
+	    #nav-bar {
+		    display: flex;
+    		align-items:  center;
+    		justify-content: flex-start;
+			gap: 30px;
+    		height: 75px;
+    		position: sticky;
+    		top: 0;
+    		background-color: #282828;
+			border-bottom: 1px solid #575757;
+			padding: 0 50px 0 50px;
 	    }		
 
-	    .nav-bar > div {
-    				padding: 10px;
-    				text-align: center;
-    				width: 125px;
-    				height: 100%;
-    				display: flex;
-    				align-items: center;
-    				justify-content: center;
+		#apple-title {
+			color: #ff7878;
+		}
+
+	    #nav-bar > div {
+    		text-align: center;
+    		min-width: 125px;
+    		height: 50%;
+    		display: flex;
+    		align-items: center;
+    		justify-content: center;
 	    }
+
+		.button {
+			text-decoration: none;
+			color: white;
+			padding: 15px;
+		}
+
+		.button:hover {
+			color: #ff7878;
+			background-color: #3f3f3f;
+			border-radius: 20px;
+			transform: scale(1.05);
+			transition: background-color 0.5s, border 0.5s, transform 0.5s;
+		}
+
+		#main-content {
+			border: 1px solid #121212;
+			background-color: #121212;
+			padding:  30px 100px 100px 100px;
+		}
+
+		#employee-section {
+			display: grid;
+			grid-template-columns: 1fr 3fr;
+			grid-template-rows: repeat(4, 1fr) auto;
+		}
+
+		#employee-section > * {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 50px;
+			height: 300px;
+			background-color: #282828;
+			border: 1px solid #575757;
+			border-radius: 50px;
+		}
+
+		.employee-name {
+			aspect-ratio: 1 / 1;
+		}
+
+		/* 
+		Color Palette:
+			Salmons/Pinks
+				#ff7878
+				#ff8886
+				#ff9894
+				#ffa7a3
+				#ffb6b2
+				#ffc5c1		
+			Greys/Blacks
+				#121212
+				#282828
+				#3f3f3f
+				#575757
+				#717171
+				#8b8b8b
+		*/
         </style>
     </head>
-
     <body>
-	<div class="nav-bar">
-		<h1>Apple</h1>
-		<!-- Insert Apple logo here(?) -->
-		<div><a href="#zijie">Zijie Wu</a></div>
-		<div><a href="#brandon">Brandon Siscoe</a></div>
-		<div><a href="#liam">Liam Willis</a></div>
-		<div><a href="#naim">Naim Cheref</a></div>
-		<div><a href="#vraj">Vraj Soni</a></div>
-		<div><a href="#michael">Michael Foley</a></div>
-	</div>
-    <h1 id="main_title">Apple Corporation</h1>
-    <h3>Employees</h3>
-    <p id="zijie"><a href="simlinks/info_0645.txt">Zijie Wu</a></p>
-    <p id="brandon"><a href="simlinks/info_1553.txt">Brandon Siscoe</a></p>
-    <p id="liam"><a href="simlinks/info_2802.txt">Liam Willis</a></p>
-    <p id="naim"><a href="simlinks/info_0053.txt">Naim Cheref</a></p>
-    <p id="vraj"><a href="simlinks/info_1922.txt">Vraj Soni</a></p>
-    <p id="michael"><a href="simlinks/info_1069.txt">Michael Foley</a></p>
-    <!-- This is the branch Liam will be working on -->
+		<!-- Navigation bar -->
+		<div id="nav-bar">
+			<div id="apple-title"><h1>Apple&nbsp;&nbsp;<i class="fa-solid fa-apple-whole"></i></h1></div>
+			<div><a href="#zijie" class="button">Zijie Wu</a></div>
+			<div><a href="#brandon" class="button">Brandon Siscoe</a></div>
+			<div><a href="#liam" class="button">Liam Willis</a></div>
+			<div><a href="#naim" class="button">Naim Cheref</a></div>
+			<div><a href="#vraj" class="button">Vraj Soni</a></div>
+			<div><a href="#michael" class="button">Michael Foley</a></div>
+		</div>
+
+		<!-- Main Page content -->
+		<div id="main-content">
+			<h1>Meet the Team!</h1>
+			<div id="employee-section">
+				<div id="zijie" class="employee-name">Zijie Wu</div>
+				<div class="employee-about"><a href="symlinks/info_0645.txt" target="_blank" class="button">Info file</a><a href="" target="_blank" class="button">Personal Website</a></div>
+				<div id="brandon" class="employee-name">Brandon Siscoe</div>
+				<div class="employee-about"><a href="symlinks/info_1553.txt" target="_blank" class="button">Info file</a><a href="" target="_blank" class="button">Personal Website</a></div>
+				<div id="liam" class="employee-name">Liam Willis</div>
+				<div class="employee-about"><a href="symlinks/info_2802.txt" target="_blank" class="button">Info file</a><a href="https://cs.umb.edu/~liamw/" target="_blank" class="button">Personal Website</a></div>
+				<div id="naim" class="employee-name">Naim Cheref</div>
+				<div class="employee-about"><a href="symlinks/info_0053.txt" target="_blank" class="button">Info file</a><a href="" target="_blank" class="button">Personal Website</a></div>
+				<div id="vraj" class="employee-name">Vraj Soni</div>
+				<div class="employee-about"><a href="symlinks/info_1922.txt" target="_blank" class="button">Info file</a><a href=""  target="_blank" class="button">Personal Website</a></div>
+				<div id="michael" class="employee-name">Michael Foley</div>
+				<div class="employee-about"><a href="symlinks/info_1069.txt" target="_blank" class="button">Info file</a><a href="" target="_blank" class="button">Personal Website</a></div>
+			</div>
+		</div>
     </body>
 </html>
