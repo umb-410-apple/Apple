@@ -46,6 +46,7 @@
 				background-color: #282828;
 				border-bottom: 1px solid #575757;
 				padding: 0 50px 0 50px;
+				z-index: 10; /* Used for stacking purposes */
 			}		
 
 			#apple-title {
@@ -87,7 +88,7 @@
 				grid-template-rows: repeat(4, 1fr) auto;
 			}
 
-			#employee-section > * {
+			#employee-section > div {
 				display: flex;
 				justify-content: center;
 				align-items: center;
@@ -98,6 +99,12 @@
 				background-color: #282828;
 				border: 1px solid #575757;
 				border-radius: 50px;
+			}
+
+			#employee-section > div:hover {
+				transform: scale(1.03);
+				transition: background-color 0.5s, border 0.5s, transform 0.5s;
+				z-index: 1; /* Prevents element from covering nav bar */
 			}
 
 			.employee-name {
