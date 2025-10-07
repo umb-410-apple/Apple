@@ -2,7 +2,8 @@
     <head>
         <meta charset="UTF-8">
         <title>Apple Corp</title>
-
+		<!-- We will need to add this attribution to the footer: <a href="https://www.flaticon.com/free-icons/fruit" title="fruit icons">Fruit icons created by Freepik - Flaticon</a>-->
+		<link rel="icon" href="/assets/apple.png">
         <!-- This is needed for the Rubik font to work, from Google Fonts -->
     	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
 		<!-- This is needed for icons, hosted by Font Awesome -->
@@ -141,7 +142,7 @@
 
         	.employee-about {
             	display: flex;
-            	flex-direction: column;
+            	flex-direction: row;
 				box-sizing: border-box;
             	gap: 20px;
         	}
@@ -239,7 +240,7 @@
             	<div class="employee-about">
                 	<a href="symlinks/info_1922.txt" target="_blank" class="button">Info file</a>
                 	<a href="#" target="_blank" class="button">Personal Website</a>
-					<div><a href="#" class="button" onclick="showEmployee('Vraj Soni')">Personal Contribution</a></div>
+					<a href="#" class="button" onclick="showEmployee('Vraj Soni')">Personal Contribution</a>
             	</div>
 
             	<div id="michael" class="employee-name">
@@ -249,7 +250,7 @@
             	<div class="employee-about">
                 	<a href="symlinks/info_1069.txt" target="_blank" class="button">Info file</a>
                 	<a href="#" target="_blank" class="button">Personal Website</a>
-					<div><a href="#" class="button" onclick="showEmployee('Michael Foley')">Personal Contribution</a></div>
+					<a href="#" class="button" onclick="showEmployee('Michael Foley')">Personal Contribution</a>
             	</div>
         	</div>
     	</div>
