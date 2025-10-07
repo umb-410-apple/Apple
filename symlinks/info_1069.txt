@@ -1,0 +1,7 @@
+1. Last four digits of student ID: 01961069
+
+2. First Name and Last Initial: Michael F
+
+3. Skills: Java, JavaScript, HTML, Python
+
+4. Preferred Roles: Tester & Designer, but will do any development role that helps me grow some new skills.
