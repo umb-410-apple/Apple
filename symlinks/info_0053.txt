@@ -1,0 +1,4 @@
+1. 0053
+2. Naim C
+3. python, C, C#, java, javascript, R, Microsoft Suite
+4. Software engineer, backend dev, frontend dev, fullstack dev
