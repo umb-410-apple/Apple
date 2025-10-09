@@ -2,7 +2,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Apple Corp</title>
-		<link rel="icon" href="assets/apple.png">
+
         <!-- This is needed for the Rubik font to work, from Google Fonts -->
     	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
 		<!-- This is needed for icons, hosted by Font Awesome -->
@@ -141,7 +141,7 @@
 
         	.employee-about {
             	display: flex;
-            	flex-direction: row;
+            	flex-direction: column;
 				box-sizing: border-box;
             	gap: 20px;
         	}
@@ -155,7 +155,7 @@
             	background-color: transparent; 
             	position: relative;
         	}
-			
+
 			/* 
 			Color Palette:
 				Salmons/Pinks
@@ -282,12 +282,12 @@
     	<!-- Navigation bar -->
     	<div id="nav-bar">
         	<h1 id="apple-title" onclick="goBack()">Apple <i class="fa-solid fa-apple-whole"></i></h1>
-        	<div><a href="#zijie" class="button" onclick="goBack()">Zijie Wu</a></div>
-        	<div><a href="#brandon" class="button" onclick="goBack()">Brandon Siscoe</a></div>
-        	<div><a href="#liam" class="button" onclick="goBack()">Liam Willis</a></div>
-        	<div><a href="#naim" class="button" onclick="goBack()">Naim Cheref</a></div>
-        	<div><a href="#vraj" class="button" onclick="goBack()">Vraj Soni</a></div>
-        	<div><a href="#michael" class="button" onclick="goBack()">Michael Foley</a></div>
+        	<div><a href="#" class="button" onclick="showEmployee('Zijie Wu')">Zijie Wu</a></div>
+        	<div><a href="#" class="button" onclick="showEmployee('Brandon Siscoe')">Brandon Siscoe</a></div>
+        	<div><a href="#" class="button" onclick="showEmployee('Liam Willis')">Liam Willis</a></div>
+        	<div><a href="#" class="button" onclick="showEmployee('Naim Cheref')">Naim Cheref</a></div>
+        	<div><a href="#" class="button" onclick="showEmployee('Vraj Soni')">Vraj Soni</a></div>
+        	<div><a href="#" class="button" onclick="showEmployee('Michael Foley')">Michael Foley</a></div>
     	</div>
 
     	<!-- Main Page content -->
@@ -301,11 +301,10 @@
             	<div class="employee-about">
                 	<a href="symlinks/info_0645.txt" target="_blank" class="button">Info file</a>
                 	<a href="https://cs.umb.edu/~zjnb/" target="_blank" class="button">Personal Website</a>
-					<a href="#" class="button" onclick="showEmployee('Zijie Wu')">Vanta Page</a>
             	</div>
 
             	<div id="brandon" class="employee-name">
-					<img src="assets/cat.PNG" alt="Brandon Siscoe">
+					<img src="#" alt="Brandon Siscoe">
 					<span>Brandon Siscoe</span>
 				</div>		
             	<div class="employee-about">
@@ -314,7 +313,7 @@
             	</div>
 
             	<div id="liam" class="employee-name">
-					<img src="assets/liam_photo.png" alt="Liam Willis">
+					<img src="#" alt="Liam Willis">
 					<span>Liam Willis</span>
 				</div>
             	<div class="employee-about">
@@ -323,12 +322,12 @@
             	</div>
 
             	<div id="naim" class="employee-name">
-					<img src="assets/saitama.gif" alt="Naim Cheref">
+					<img src="#" alt="Naim Cheref">
 					<span>Naim Cheref</span>
 				</div>
             	<div class="employee-about">
                 	<a href="symlinks/info_0053.txt" target="_blank" class="button">Info file</a>
-                	<a href="https://www.cs.umb.edu/~naim/" target="_blank" class="button">Personal Website</a>
+                	<a href="#" target="_blank" class="button">Personal Website</a>
             	</div>
 
             <div id="vraj" class="employee-name">
@@ -412,45 +411,5 @@
             	mainContent.style.display = 'block';
         	}
     	</script>
-
-		<!-- ==================================================================
-		MINIMALIST SINGLE-LINE FOOTER
-		================================================================== -->
-		<footer class="footer-minimal" role="contentinfo">
-		<div class="footer-minimal__container">
-		<p class="footer-minimal__copyright">
-		&copy; 2025 Apple. No Rights Reserved. It's not that Apple.<br>
-		<a href="https://www.flaticon.com/free-icons/fruit" title="fruit icons">Our Apple tab image was created by Freepik - Flaticon (Click Here)</a>
-		</p>
-		</div>
-		</footer>
-
-
-		<!-- Optional CSS for styling (add in main stylesheet or inline) -->
-		<style>
-		.footer-minimal {
-		background-color: #282828;
-		color: #ffffff;
-		text-align: center;
-		padding: 20px 10px;
-		border-top: 1px solid #575757;
-		font-family: "Rubik", sans-serif;
-		}
-		.footer-minimal__container {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: 12px;
-		}
-		.footer-minimal__nav ul {
-    	display: flex;
-    	list-style: none;
-    	gap: 16px;
-    	padding: 0;
-    	margin: 0;
-  		}
-		</style>
-				
 	</body>
-	
 </html>
