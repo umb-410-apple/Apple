@@ -70,7 +70,6 @@ window.addEventListener ('DOMContentLoaded', () => {
 	const color2Input = document.getElementById('color2');
 	const bgInput = document.getElementById('bgcolor');	
 
-
 	color1Input.value = "#" + color1.toString(16).padStart(6, "0");
 	color2Input.value = "#" + color2.toString(16).padStart(6, "0");
 	bgInput.value = "#" + bgcolor.toString(16).padStart(6, "0");
