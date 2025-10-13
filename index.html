@@ -12,7 +12,8 @@
     	<script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.globe.min.js"></script>
 
 		<!-- Link to external CSS file -->
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/main_content_style.css">
 	</head>
 
 	<body>
@@ -25,6 +26,7 @@
         	<div><a href="#naim" class="button" onclick="goBack()">Naim Cheref</a></div>
         	<div><a href="#vraj" class="button" onclick="goBack()">Vraj Soni</a></div>
         	<div><a href="#michael" class="button" onclick="goBack()">Michael Foley</a></div>
+			<div><a href="about.html" class="button">About Us</a></div>
     	</div>
 
     	<!-- Main Page content -->
@@ -35,11 +37,13 @@
                 	<img src="assets/squidward.gif" alt="Zijie Wu">
                 	<span>Zijie Wu</span>
             	</div>
-            	<div class="employee-about">
-                	<a href="symlinks/info_0645.txt" target="_blank" class="button">Info file</a>
-                	<a href="https://cs.umb.edu/~zjnb/" target="_blank" class="button">Personal Website</a>
-					<a href="#" class="button" onclick="showEmployee('Zijie Wu')">Vanta Page</a>
-            	</div>
+            	<div class="employee-about zijie-about" onclick="window.location.href='zijie_employee_page.html';" style="cursor: pointer;">
+					<div class="zijie-globe-bg"></div>
+					<div class="zijie-buttons">
+						<a href="symlinks/info_0645.txt" target="_blank" class="button" onclick="event.stopPropagation()">Info file</a>
+						<a href="https://cs.umb.edu/~zjnb/" target="_blank" class="button" onclick="event.stopPropagation()">Personal Website</a>
+					</div>
+				</div>
 
             	<div id="brandon" class="employee-name">
 					<img src="assets/cat.PNG" alt="Brandon Siscoe">
@@ -90,20 +94,53 @@
         	</div>
     	</div>
 
-    	<!-- Employee Page -->
-    	<div id="employee-page">
-        	<span id="employee-name"></span>
-    	</div>
+		<script>
+            let vantaSmall = null;
 
-		<!-- Slicer UI -->
-		<div id="slicer-ui">
-			<label>Color1: <input type="color" id="color1" class="color-input" value="#ff7878"></label>
-			<label>Color2: <input type="color" id="color2" class="color-input" value="#ffffff"></label>
-			<label>Background: <input type="color" id="bgcolor" class="color-input" value="#121212"></label>
-		</div>
+            function showEmployee(name) {
+                const mainContent = document.getElementById('main-content');
+                const employeePage = document.getElementById('employee-page');
+                const employeeName = document.getElementById('employee-name');
+                const footer = document.querySelector('footer');
 
-		<!-- Link to external JS file -->
-		<script src="script.js"></script>
+                mainContent.style.display = 'none';
+                employeePage.style.display = 'flex';
+                footer.style.display = 'none';
+
+                employeeName.style.display = 'block';
+                employeeName.textContent = name;
+            }
+
+            function goBack() {
+                const employeePage = document.getElementById('employee-page');
+                const mainContent = document.getElementById('main-content');
+                const footer = document.querySelector('footer');
+
+                employeePage.style.display = 'none';
+                mainContent.style.display = 'block';
+                footer.style.display = 'block';
+            }
+
+            window.addEventListener('DOMContentLoaded', () => {
+                const zijieGlobeBg = document.querySelector('.zijie-globe-bg');
+
+                if (zijieGlobeBg) {
+                    vantaSmall = VANTA.GLOBE({
+                        el: zijieGlobeBg,
+                        mouseControls: true,
+                        touchControls: true,
+                        gyroControls: false,
+                        minHeight: 350.00,
+                        minWidth: 600.00,
+                        scale: 1.0,
+                        scaleMobile: 1.0,
+                        color: 0xff7878,
+                        color2: 0xffffff,
+                        backgroundColor: 0x121212
+                    });
+                }
+            });
+        </script>
 
 		<!-- Footer -->
 		<footer class="footer-minimal" role="contentinfo">
