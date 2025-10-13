@@ -37,10 +37,9 @@ a {
     position: sticky;
     top: 0;
     background-color: #282828;
-    border-bottom: 1px solid #575757;
+    border-bottom: 2px solid #575757;
     padding: 0 50px 0 50px;
-    z-index: 10;
-    /* Used for stacking purposes */
+    z-index: 10; /* Used for stacking purposes */
 }
 
 #apple-title {
@@ -100,8 +99,7 @@ a {
 #employee-section>div:hover {
     transform: scale(1.03);
     transition: background-color 0.5s, border 0.5s, transform 0.5s;
-    z-index: 1;
-    /* Prevents element from covering nav bar */
+    z-index: 1; /* Prevents element from covering nav bar */
 }
 
 .employee-name {
@@ -184,23 +182,27 @@ a {
     color: #ffffff;
     text-align: center;
     padding: 20px 10px;
-    border-top: 1px solid #575757;
+    border-top: 2px solid #575757;
     font-family: "Rubik", sans-serif;
 }
 
 .footer-minimal__container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    gap: 12px;
 }
 
-.footer-minimal__nav ul {
-    display: flex;
-    list-style: none;
-    gap: 16px;
-    padding: 0;
+.footer-minimal__copyright {
     margin: 0;
+    text-align: center;
+    flex: 1;
+}
+
+.footer-photo {
+    width: 140px;
+    height: 60px;
+    position: absolute;
+    right: 20px;
 }
 
 /* --- Golden Theme Enhancements for Vraj --- */
