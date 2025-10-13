@@ -7,10 +7,12 @@ function showEmployee (name) {
 	const mainContent = document.getElementById('main-content');
 	const employeePage = document.getElementById('employee-page');
 	const employeeName = document.getElementById('employee-name');
+	const footer = document.querySelector('footer');
 	const slicerUI = document.getElementById('slicer-ui');
 
 	mainContent.style.display = 'none';
 	employeePage.style.display = 'flex';
+	footer.style.display = 'none';
 
 	if (name === 'Zijie Wu') {
 		// Initialize VANTA Globe if not already running
@@ -47,6 +49,7 @@ function showEmployee (name) {
 function goBack () {
 	const employeePage = document.getElementById('employee-page');
 	const mainContent = document.getElementById('main-content');
+	const footer = document.querySelector('footer');
 	const slicerUI = document.getElementById('slicer-ui');
 
 	// Destroy VANTA Globe if active
@@ -57,6 +60,7 @@ function goBack () {
 
 	employeePage.style.display = 'none';
 	mainContent.style.display = 'block';
+	footer.style.display = 'block';
 	slicerUI.style.display = 'none';
 }
 
