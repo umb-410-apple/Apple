@@ -1,0 +1,282 @@
+Liam Willis
+classproj2 commit artifacts
+
+Below is a series of my commits, representing the changes I (Liam) made to our personal website. Note that my name under "Author" may appear as both "Liam Willis" and "Lykos3D." This is because my name is set differently depending on which machine I committed my changes on:
+
+commit 1c20344f353479b895778a5cd81443ce72100640 (HEAD -> Liam-Branch, origin/Liam-Branch)
+Merge: c191894 536f665
+Author: Liam Willis <Liam.Willis001@umb.edu>
+Date:   Thu Oct 9 16:41:02 2025 -0400
+
+    Merge branch 'main' into Liam-Branch
+
+commit c1918940515e1acc2e2a8479cf13d6ae24589bf9
+Author: Liam Willis <Liam.Willis001@umb.edu>
+Date:   Thu Oct 9 16:40:00 2025 -0400
+
+    Fix body not expanding with contents
+
+    This should fix an issue causing some elements (e.g. the nav bar) to not completely appear when scrolling horizontally.
+
+commit 253683666ed5ccb6205c3f7cee6c8e2b9be645be
+Merge: e019d3f 2afc87a
+Author: Lykos3D <135353602+Lykos3D@users.noreply.github.com>
+Date:   Wed Oct 8 08:23:22 2025 -0400
+
+    Merge pull request #28 from umb-410-apple/Liam-Branch
+
+    Add goBack() to nav bar buttons
+
+commit 2afc87a16140db1509a24127ab973bd94dfeb25e
+Author: Lykos3D <liamwillis0@gmail.com>
+Date:   Wed Oct 8 08:22:25 2025 -0400
+
+    Add goBack() to nav bar buttons
+
+commit e019d3ffebd20daf08258b6a2291bb8a1eeff3f8
+Merge: b703ffe 2250c36
+Author: Lykos3D <135353602+Lykos3D@users.noreply.github.com>
+Date:   Tue Oct 7 17:18:08 2025 -0400
+
+    Merge pull request #27 from umb-410-apple/Liam-Branch
+
+    Add acknowledgement and remove social media images in footer
+
+commit 2250c3605deedb9fed1d031ea34af959c60d2054
+Author: Liam Willis <Liam.Willis001@umb.edu>
+Date:   Tue Oct 7 17:16:44 2025 -0400
+
+    Add acknowledgement and remove social media images in footer
+
+commit b703ffee8b22093f3e58cd0698e3c871989c27b3
+Merge: 69a79cc 91dd173
+Author: Lykos3D <135353602+Lykos3D@users.noreply.github.com>
+Date:   Tue Oct 7 17:07:01 2025 -0400
+
+    Merge pull request #26 from umb-410-apple/Liam-Branch
+
+    Fix link typo
+
+commit 91dd1739c6d4ee08839626745e1829fe1ab58792
+Author: Liam Willis <Liam.Willis001@umb.edu>
+Date:   Tue Oct 7 17:06:40 2025 -0400
+
+    Fix link typo
+
+commit 69a79ccfcf088755d0ee99fedd9821cacd6cff6c
+Merge: baa59f3 72fff98
+Author: Lykos3D <135353602+Lykos3D@users.noreply.github.com>
+Date:   Tue Oct 7 17:04:58 2025 -0400
+
+    Merge pull request #25 from umb-410-apple/Liam-Branch
+
+    Fix link typo
+
+commit 72fff987782accfa9a72073a1e7ef175aadf399e
+Author: Liam Willis <Liam.Willis001@umb.edu>
+Date:   Tue Oct 7 17:04:36 2025 -0400
+
+    Fix link typo
+
+commit baa59f3b35dda48bb70423f49c19a563a4d1e1e9
+Merge: 4223260 d666148
+Author: Lykos3D <135353602+Lykos3D@users.noreply.github.com>
+Date:   Tue Oct 7 17:01:14 2025 -0400
+
+    Merge pull request #24 from umb-410-apple/Liam-Branch
+
+    Change Liam photo to png
+
+commit d666148a56b28aa02bab501883167c1639207d9c
+Author: Liam Willis <Liam.Willis001@umb.edu>
+Date:   Tue Oct 7 17:00:57 2025 -0400
+
+    Change Liam photo to png
+
+commit 4223260b8b0a040f3acf0ef761159636fad29f65
+Merge: 3d0c095 eca20be
+Author: Lykos3D <135353602+Lykos3D@users.noreply.github.com>
+Date:   Tue Oct 7 16:56:52 2025 -0400
+
+    Merge pull request #23 from umb-410-apple/Liam-Branch
+
+    Remove unnecessary buttons
+
+commit eca20be2c927a9af52a1a3bb527acdc57407097c
+Author: Liam Willis <Liam.Willis001@umb.edu>
+Date:   Tue Oct 7 16:56:35 2025 -0400
+
+    Remove unnecessary buttons
+
+commit 3d0c095e23bb90c8c6ef648cac302d49b24de84a
+Merge: f388f73 afda09e
+Author: Lykos3D <135353602+Lykos3D@users.noreply.github.com>
+Date:   Tue Oct 7 16:55:50 2025 -0400
+
+    Merge pull request #22 from umb-410-apple/Liam-Branch
+
+    Fix typo and remove unnecessary button
+
+commit afda09ee368fbbbc915bcc54f0f68fa227cfef50
+Author: Liam Willis <Liam.Willis001@umb.edu>
+Date:   Tue Oct 7 16:55:24 2025 -0400
+
+    Remove unnecessary button
+
+commit f6677a1e9b520fb3c38f5dcfb573b10466967f63
+Author: Liam Willis <Liam.Willis001@umb.edu>
+Date:   Tue Oct 7 16:54:44 2025 -0400
+
+    Fix nav bar typo
+
+commit f388f735d8b2e453e0a62086b45a3ac7013ec55c
+Merge: 425ef2e ebaf1db
+Author: Lykos3D <135353602+Lykos3D@users.noreply.github.com>
+Date:   Tue Oct 7 16:49:32 2025 -0400
+
+    Merge pull request #20 from umb-410-apple/Liam-Branch
+
+    Add Liam image, make about-me buttons horizontal, and change nav bar links to anchor links
+
+commit ebaf1db690d0567842cf1a3c5661703bae23f494
+Merge: 09763e0 425ef2e
+Author: Lykos3D <135353602+Lykos3D@users.noreply.github.com>
+Date:   Tue Oct 7 16:49:17 2025 -0400
+
+    Merge branch 'main' into Liam-Branch
+
+commit 09763e0e0cfa3dae1762cc97189ed996b2a69365
+Author: Liam Willis <Liam.Willis001@umb.edu>
+Date:   Tue Oct 7 16:45:25 2025 -0400
+
+    Add tab icon #13
+
+commit ec003217cc57655966742e7619fb9902a98fab9c
+Author: Liam Willis <Liam.Willis001@umb.edu>
+Date:   Tue Oct 7 16:19:31 2025 -0400
+
+    Add Liam image to index.html and assets folder
+
+commit 77e443eb4e879b28e3eb89d450eb911cd3b49932
+Author: Liam Willis <Liam.Willis001@umb.edu>
+Date:   Tue Oct 7 16:07:35 2025 -0400
+
+    Update nav-bar buttons to anchor links
+
+commit a39b47c2f764d00eea11a2ba63d37ac921137772
+Merge: fb36695 aabffd9
+Author: Lykos3D <135353602+Lykos3D@users.noreply.github.com>
+Date:   Sun Oct 5 18:08:10 2025 -0400
+
+    Merge pull request #14 from umb-410-apple/Liam's-Branch
+
+    Liam's branch
+
+commit aabffd9dbed9414649c29ed7315d7175a4a139d9 (origin/Liam's-Branch, Liam's-Branch)
+Author: Lykos3D <liamwillis0@gmail.com>
+Date:   Fri Oct 3 14:29:25 2025 -0400
+
+    Add hovering effects to grid elements
+
+commit 0270fafdd98075a1fecd8a5d3d1c36b0f5ca6c58
+Author: Lykos3D <liamwillis0@gmail.com>
+Date:   Fri Oct 3 14:22:33 2025 -0400
+
+    Remove unnecessary &nbsp;
+
+commit 33e9efda9d2b437ec3043d0039f7aaf52caf4142
+Author: Lykos3D <liamwillis0@gmail.com>
+Date:   Fri Oct 3 14:17:46 2025 -0400
+
+    Make anchor links scroll until anchor is vertically centered
+
+commit fd7fea461626266e3c0813f078e0f92d66594d97
+Author: Lykos3D <liamwillis0@gmail.com>
+Date:   Fri Oct 3 14:05:59 2025 -0400
+
+    Eliminate unnecessary div element
+commit a39b47c2f764d00eea11a2ba63d37ac921137772
+Merge: fb36695 aabffd9
+Author: Lykos3D <135353602+Lykos3D@users.noreply.github.com>
+Date:   Sun Oct 5 18:08:10 2025 -0400
+
+    Merge pull request #14 from umb-410-apple/Liam's-Branch
+
+    Liam's branch
+
+commit aabffd9dbed9414649c29ed7315d7175a4a139d9 (origin/Liam's-Branch, Liam's-Branch)
+Author: Lykos3D <liamwillis0@gmail.com>
+Date:   Fri Oct 3 14:29:25 2025 -0400
+
+    Add hovering effects to grid elements
+
+commit 0270fafdd98075a1fecd8a5d3d1c36b0f5ca6c58
+Author: Lykos3D <liamwillis0@gmail.com>
+Date:   Fri Oct 3 14:22:33 2025 -0400
+
+    Remove unnecessary &nbsp;
+
+commit 33e9efda9d2b437ec3043d0039f7aaf52caf4142
+Author: Lykos3D <liamwillis0@gmail.com>
+Date:   Fri Oct 3 14:17:46 2025 -0400
+
+    Make anchor links scroll until anchor is vertically centered
+
+commit fd7fea461626266e3c0813f078e0f92d66594d97
+Author: Lykos3D <liamwillis0@gmail.com>
+Date:   Fri Oct 3 14:05:59 2025 -0400
+
+    Eliminate unnecessary div element
+
+commit a452c2d8858a29594378f08967e25630838bcb2a
+Author: Lykos3D <liamwillis0@gmail.com>
+Date:   Fri Oct 3 11:49:35 2025 -0400
+
+    Reduce width variability for grid elements
+
+commit 76628396819b056759632a1cd3637d7360f09d17
+Author: Lykos3D <liamwillis0@gmail.com>
+Date:   Fri Oct 3 11:40:12 2025 -0400
+
+    Increase height of employee grid elements
+
+commit 57152647cf7564f6af4ea2ee83edc6d13a0d1585
+Author: Lykos3D <liamwillis0@gmail.com>
+Date:   Fri Oct 3 11:13:13 2025 -0400
+
+    Update website layout. Refs #6, refs #9, refs #10
+
+    Here, a new layout for the website is made. The navigation bar at the top can be used to navigate to a particular team member's section of the page. Each team member's section also has a button leading to their info_nnnn.txt file as well as their personal website (this needs to be added by each team member). Additionally, a dark salmon theme is proposed here.
+
+commit fb36695ecac9e709f948da5d40cb9e713f0e93df
+Merge: 1dd16db 7c78742
+Author: Lykos3D <135353602+Lykos3D@users.noreply.github.com>
+Date:   Thu Oct 2 17:07:52 2025 -0400
+
+    Merge pull request #2 from umb-410-apple/Liam's-Branch
+
+    Rename info_2802.txt
+
+commit 7c787428fd12d7b6b5c42bb9fdde8cab72121286
+Author: Liam Willis <Liam.Willis001@umb.edu>
+Date:   Thu Oct 2 17:07:16 2025 -0400
+
+    Rename info_2802.txt
+
+commit 80905b95e1a61266c98b29c087262d59c4f69978
+Author: Liam Willis <Liam.Willis001@umb.edu>
+Date:   Thu Oct 2 16:58:38 2025 -0400
+
+    Add info_2802.txt
+
+commit 525742480d754fef3c744aaf2210b91a24fbbd9a
+Author: Liam Willis <Liam.Willis001@umb.edu>
+Date:   Thu Oct 2 16:57:13 2025 -0400
+
+    Add initial CS server files
+
+commit 12d8d0c5048f83028e1ff3c056cef60485bf1b53
+Author: Lykos3D <135353602+Lykos3D@users.noreply.github.com>
+Date:   Thu Oct 2 16:38:58 2025 -0400
+
+    Initial commit
