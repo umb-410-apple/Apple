@@ -19,13 +19,13 @@
 	<body>
     	<!-- Navigation bar -->
     	<div id="nav-bar">
-        	<h1 id="apple-title" onclick="goBack()">Apple <i class="fa-solid fa-apple-whole"></i></h1>
-        	<div><a href="#zijie" class="button" onclick="goBack()">Zijie Wu</a></div>
-        	<div><a href="#brandon" class="button" onclick="goBack()">Brandon Siscoe</a></div>
-        	<div><a href="#liam" class="button" onclick="goBack()">Liam Willis</a></div>
-        	<div><a href="#naim" class="button" onclick="goBack()">Naim Cheref</a></div>
-        	<div><a href="#vraj" class="button" onclick="goBack()">Vraj Soni</a></div>
-        	<div><a href="#michael" class="button" onclick="goBack()">Michael Foley</a></div>
+        	<a href="index.html" style="text-decoration:none;"><h1 id="apple-title">Apple <i class="fa-solid fa-apple-whole"></i></h1></a>
+        	<div><a href="#zijie" class="button">Zijie Wu</a></div>
+        	<div><a href="#brandon" class="button">Brandon Siscoe</a></div>
+        	<div><a href="#liam" class="button">Liam Willis</a></div>
+        	<div><a href="#naim" class="button">Naim Cheref</a></div>
+        	<div><a href="#vraj" class="button">Vraj Soni</a></div>
+        	<div><a href="#michael" class="button">Michael Foley</a></div>
 			<div><a href="about.html" class="button">About Us</a></div>
     	</div>
 
@@ -96,30 +96,6 @@
 
 		<script>
             let vantaSmall = null;
-
-            function showEmployee(name) {
-                const mainContent = document.getElementById('main-content');
-                const employeePage = document.getElementById('employee-page');
-                const employeeName = document.getElementById('employee-name');
-                const footer = document.querySelector('footer');
-
-                mainContent.style.display = 'none';
-                employeePage.style.display = 'flex';
-                footer.style.display = 'none';
-
-                employeeName.style.display = 'block';
-                employeeName.textContent = name;
-            }
-
-            function goBack() {
-                const employeePage = document.getElementById('employee-page');
-                const mainContent = document.getElementById('main-content');
-                const footer = document.querySelector('footer');
-
-                employeePage.style.display = 'none';
-                mainContent.style.display = 'block';
-                footer.style.display = 'block';
-            }
 
             window.addEventListener('DOMContentLoaded', () => {
                 const zijieGlobeBg = document.querySelector('.zijie-globe-bg');
