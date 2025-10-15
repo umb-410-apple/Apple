@@ -187,3 +187,28 @@
         position: relative;
     }
 }
+
+.falling-apple {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    pointer-events: none;
+    transform: translate(-50%, -50%) rotate(0deg);
+    animation: fallApple 3s cubic-bezier(0.2, 0.8, 0.4, 1) forwards;
+    z-index: 1000;
+}
+
+@keyframes fallApple {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    90% {
+        transform: translate(-50%, calc(100vh - 100px)) rotate(360deg);
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, calc(100vh - 90px)) rotate(380deg);
+    }
+}

@@ -96,8 +96,8 @@
     	</div>
 
 		<script>
+			// VANTA Globe effect for Zijie Wu section
             let vantaSmall = null;
-
             window.addEventListener('DOMContentLoaded', () => {
                 const zijieGlobeBg = document.querySelector('.zijie-globe-bg');
 
@@ -117,6 +117,27 @@
                     });
                 }
             });
+
+			// Falling apple effect
+			window.addEventListener('click', (e) => {
+				const tag = e.target.tagName.toLowerCase();
+				if (['a', 'button', 'input', 'label'].includes(tag)) {
+					return;
+				}
+
+				if (e.target.closest('.employee-about') || e.target.closest('#nav-bar') || e.target.closest('footer') || e.target.closest('.employee-name')) {
+					return;
+				}
+
+				const apple = document.createElement('img');
+				apple.src = 'assets/apple.png';
+				apple.className = 'falling-apple';
+				apple.style.left = e.clientX + 'px';
+				apple.style.top = e.clientY + 'px';
+				document.body.appendChild(apple);
+
+				setTimeout(() => apple.remove(), 3000);
+			});
         </script>
 
 		<!-- Footer -->
