@@ -11,5 +11,6 @@ Product Backlog:
 - Add info_nnnn.txt file links to website [x]
 - Add personal images to website [x]
 - Add Vanta animation (Zijie) [x]
-- Add About page to website [ ]
+- Add About page to website (Zijie) [x]
 - Add Easter Egg to website (Naim) [x]
+- Add falling apple mouse event to website (Zijie) [x]
