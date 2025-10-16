@@ -33,6 +33,24 @@ Here are my contribution to the Apple Corp website:
 
 ### Brandon
 
-### Vraj
+### Vraj Soni
+
+For this project, I contributed both as a developer and a team coordinator. Early in the process, I made several improvements to our website’s structure, focusing on refining the design and CSS to create a more consistent and visually appealing layout. Later, I developed my own personal website from scratch and integrated it into my section of the Apple Corporation website, updating my profile content and links. Throughout the project, I also played a key role in helping teammates use GitHub effectively, assisting with version control commands, resolving merge issues, and maintaining smooth collaboration within the group.
+
+My contributions to the Apple Corporation website include:
+
+- Improved and updated the website’s design and CSS for a cleaner, more modern layout.
+
+- Developed my personal website and linked it within my profile section.
+
+- Updated my section of the Apple Corporation website with new content and layout.
+
+- Assisted teammates with Git and GitHub operations, including branching, merging, and pushing commits.
+
+- Helped maintain consistent version control and coordination among all team members.
+
+- Contributed to a collaborative, well-organized workflow that ensured the project ran smoothly.
+
+Role: Developer / Team Coordinator
 
 ### Michael
