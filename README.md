@@ -18,6 +18,13 @@ For the Apple Corporation website itself, I personally contributed several thing
 - Other hover effects, including boxes in the "Meet the Team!" section expanding when hovered over by the cursor
 
 ### Naim
+For this project, I contributed as a developer to add new features to the website. Early on as the developer I was looking to add stuff to the website that would improve the user experience. I communicated with my teammates to figure out what changes we should make to the website. during this time i made sure to maintain good communication amoung teamates and made sure to adopt a few changes to the website through conformation with all of them.
+
+for the Contributions to the website, they include:
+-adding a footer to the website
+-imported files to include in my own profile
+-Added an "easter egg"/secret button to the website 
+-created a new HTML file as a seperate part of the website
 
 ### Zijie Wu
 
