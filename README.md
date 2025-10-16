@@ -54,3 +54,16 @@ My contributions to the Apple Corporation website include:
 Role: Developer / Team Coordinator
 
 ### Michael
+
+In this Project2 I had played the job as an semi active coordinator aswell as aa developer for a small portion of the job. Starting from our first scrum we had had communicated what name, organizationm, and design which through a proper workflow and product backlog we were able to create something pretty neat.I had say in what happened, but was mainly going with the flow and basing my additions on the restricted requirments and what they preffered as I was struggling to decide how I would contrbute to my specific website tab other than linking my credential and liked their ideas. I had learned more on the spot about version control (with help) and was eventually able to pull & push some other code than just that of my credentials into a Vanta template.
+
+My Contributions
+- Had communicated consistently with my team to keep updated with what they were doing outside the scope of Version Control (not just productbacklog, commits etc...).
+
+- Added and linked up my website link and info to match up what my team agreed on for a template.
+
+- Added a photo to the assets page which was the first idea and only idea of mine we used (as I didn't have many original for this that wouldn't interfere). 
+
+- Added interactive features to my index.html file which is linked to the Apple team website. (Fireworks)
+
+- Helped out with reports as well for myself and people who were unsure how to report what we were doing in an sufficient enough.
