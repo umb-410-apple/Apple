@@ -19,7 +19,17 @@ For the Apple Corporation website itself, I personally contributed several thing
 
 ### Naim
 
-### Zijie
+### Zijie Wu
+
+For this project, my main mission was developing the website and the side mission was being a product owner. As a product owner, I communicated with my team about what things could be added to our website. As a developing person, I communicated with my team what some things I did and asked
+for their feedback to improve the thing I just put onto the website. 
+
+Here are my contribution to the Apple Corp website:
+- Generalize photo frame for each team member so that they only need to put their image urls to have their photo showing on the website.
+- Add UMB logo to the footer, and the logo will open the official UMB website whenever you click it.
+- Add a small vanta globe scene on my person employee about grid.
+- Create a vanta globe scene page with a slicer UI for color changing.
+- Add an about us button on nav bar, create a about us page that contains a small description and two videos.
 
 ### Brandon
 
