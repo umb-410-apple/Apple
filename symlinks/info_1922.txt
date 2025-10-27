@@ -1,10 +1,23 @@
-Soni Vraj, 4 September 2025
+Soni Vraj, 27 October 2025
 
 1. Last four digits of student ID: 1922
 
 2. First Name and Last Initial: Vraj S.
 
-3. Skills: Programming in C, C++, Java, Python, HTML, CSS; Mentorship and Leadership. 
+3. Skills:
+   - Programming in C, C++, Java, Python, HTML, CSS
+   - Mentorship and Leadership
+   - AWS Solution Architect Associate Certification
+   - Git and GitHub (branching, commits, merging)
+   - Command Line Tools (terminal usage for repository and server operations)
 
-4. Preferred Roles: Full-Stack Developer, Software Developer, Data Analyst, Machine Learning Engineer,  
-   AI Engineer, Machine Learning Scientist.
+4. Preferred Roles:
+   - Full-Stack Developer
+   - Software Developer
+   - Data Analyst
+   - Machine Learning Engineer
+   - AI Engineer
+   - Machine Learning Scientist
+   - Project Collaborator 
+   - Development Contributor
+
