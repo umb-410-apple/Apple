@@ -2,14 +2,14 @@ Team Apple
 
 Product Backlog:
 - Add navigation bar to website (Liam) [x]
-- Add some color/design elements [x]
+- Add some color/design elements (Vraj) [x]
 - Add a cohesive color palette (Liam) [x]
 - Add icon for website tab [x]
 - Add footer to webpage (Naim) [x]
-- Add links to personal websites [x]
+- Add links to personal websites (Vraj) [x]
 - Add link to music visualizer (Brandon) [ ]
 - Add info_nnnn.txt file links to website [x]
-- Add personal images to website [x]
+- Add personal images to website (Vraj) [x]
 - Add Vanta animation (Zijie) [x]
 - Add About page to website (Zijie) [x]
 - Add Easter Egg to website (Naim) [x]
