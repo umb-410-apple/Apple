@@ -1,0 +1,50 @@
+Vraj Soni
+classproj2 testing artifacts
+
+Below describes the methods I used to test my contributions to ensure proper display, responsiveness, and interactivity across browsers.
+
+1. Profile Image and Hover Effects
+Testing Methods:
+- Opened website in Google Chrome, Firefox, and Safari.
+- Hovered over image and buttons to confirm smooth glow animations.
+- Checked glow consistency across light and dark themes.
+
+Results:
+All animations ran smoothly and did not overlap other elements.
+
+2. Personal Website Link
+Testing Methods:
+- Click-tested the “My Website” button on all major browsers.
+- Verified that the link opened in a new tab (target="_blank").
+- Checked accessibility with keyboard navigation and screen readers.
+
+Results:
+Link consistently opened the correct destination with proper accessibility.
+
+3. Footer Logo Alignment
+Testing Methods:
+- Resized browser windows to various width-to-height ratios (4:3, 16:9, 1:2).
+- Ensured UMass Boston logo scaled proportionally and stayed aligned.
+
+Results:
+Footer layout remained balanced and visually consistent across resolutions.
+
+4. Responsiveness and Layout Integrity
+Testing Methods:
+- Used Chrome DevTools to simulate mobile, tablet, and widescreen displays.
+- Verified that all grid elements and animated buttons remained within layout.
+- Ensured that animations did not interfere with navigation bar visibility.
+
+Results:
+Layout remained stable and responsive under all breakpoints.
+
+5. Cross-Verification on CS Server
+Testing Methods:
+- Loaded the live CS server version to confirm that hosted behavior matched GitHub output.
+- Double-checked that both the info_nnnn.txt link and website button functioned correctly.
+
+Results:
+All hosted elements worked as expected; no broken links or missing files found.
+
+Verification Note:
+All testing relates directly to my commits and updates from branch vraj23.
