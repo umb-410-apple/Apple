@@ -1,0 +1,40 @@
+Naim Cheref  
+classproj2 commit artifacts
+
+Below is a summary of my commits on the Naim branch, representing the updates and improvements I contributed to the website’s layout, content, and interactivity.
+
+---
+
+Commit 6b0acbe – Added Footer, info.txt, and Profile Image  
+Author: Naim Cheref <naim.cheref001@umb.edu>  
+Date: Oct 7, 2025  
+Description:  
+Added a footer section to the website containing contact information and the UMass Boston logo for a complete, polished appearance. Included my info_0053.txt file and integrated my profile image into the “Meet the Team” section.
+
+---
+
+Commit 17a8c56 – Secret Update  
+Author: Naim Cheref <naim.cheref001@umb.edu>  
+Date: Oct 14, 2025  
+Description:  
+Implemented a hidden easter egg in the form of a small interactive game within the website. Designed as a creative surprise to enhance engagement without interfering with main page functions or performance.
+
+---
+
+Commit 8e23cc7 – Update README.md  
+Author: Naim Cheref <naim.cheref001@umb.edu>  
+Date: Oct 16, 2025  
+Description:  
+Expanded the README file to describe my development role and specific contributions, including adding a footer, importing personal files, creating a secret game button, and adding a new HTML file for an extra page. Clarified teamwork and communication details to document my process and improvements.
+
+---
+
+Enhancements Added:  
+- Added responsive footer and integrated personal profile elements.  
+- Created an easter egg game hidden within the site.  
+- Added new HTML file.  
+- Updated README to document contributions clearly.  
+- Improved layout consistency and overall user experience.
+
+Verification Note:  
+All commits listed above are verified from the Naim branch on GitHub (umb-410-apple/Apple) under the author Naim Cheref.
