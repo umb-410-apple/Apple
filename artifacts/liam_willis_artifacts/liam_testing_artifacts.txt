@@ -1,0 +1,31 @@
+Liam Willis
+classproj2 testing artifacts
+
+Below represents the changes I made, as well as how I went about testing them.
+
+1. Navigation Bar
+
+For the navigation bar, to make sure that it was displaying correctly, regardless of web browser or width and height of the browser window, I performed the following tests:
+- Tested our website on Google Chrome, Microsoft Edge, and Firefox
+- Clicked each of the buttons to make sure they directed to the correct team members' section of the page
+- Adjusted the browser window to a variety of widths and heights (e.g. a width to height ratio of 1 : 10) to see if the navigation bar presented nicely still
+
+For the last test, I noticed that it would sometimes overflow, and added a change (body { min-width: min-content} to prevent this from happening.
+
+2. Tab Icon
+
+For the tab icon (the little Apple icon that appears on the tab), I tested this again by going to our website on three different web browsers: Google Chrome, Microsoft Edge, and Firefox. I was able to see the Apple appear in these web browsers, and hence was confident that it was working appropriately.
+
+3. Grid Layout of Website
+
+Another thing I added to the website was the general format of the "Meet the Team" website, with our images off to the left and buttons to our info_nnnn.txt/personal websites to the right in boxes. To test this, I did the following changes again:
+- Tested the Website in Google Chrome, Microsoft Edge, and Firefox
+- Adjusted the browser window to a variety of widths and heights to see if the Meet the Team section was still presentable
+
+In the second test, I noticed that, if the page was too wide, then the boxes on the right-hand side would continue to stretch infinitely, resulting in a non-aesthetically pleasing look to the site. To rectify this, I added a maximum width to the website to prevent awkward appearances with such extreme displays.
+
+4. Hovering of Elements
+
+I also added some hover effects to website elements, where if you hover over some elements, they would expand and change color. To test this, I simply hovered over each element on the page and saw whether they exhibited the expected behavior.
+
+One problem that I encountered was that, upon hovering, the elements would override the navigation bar (i.e. appear above it), which was unintended behavior. To fix this, I added a CSS rule z-index to both the navigation bar and the hover elements, essentially stating to always have the navigation bar appear above the hover elements. This rectified the odd behavior.

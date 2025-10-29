@@ -11,283 +11,22 @@
     	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     	<script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.globe.min.js"></script>
 
-		<style>
-			html {
-				scroll-behavior: smooth;
-				scroll-padding-top: 30%;
-				overflow: auto;
-			}
-
-			body {
-				margin: 0;
-				padding: 0;
-				font-family: 'Rubik', sans-serif, serif;
-				color: white;
-				background-color: #121212;
-			}
-
-        	h1 {
-				text-align: center;
-			}
-
-            p {
-                font-size: 16pt;
-                font-weight: normal;
-				scroll-margin-top: 80px;
-            }
-
-        	a {
-				color: white;
-				text-decoration: none;
-			}
-
-        	#nav-bar {
-				display: flex;
-				align-items:  center;
-				justify-content: flex-start;
-				gap: 30px;
-				height: 75px;
-				position: sticky;
-				top: 0;
-				background-color: #282828;
-				border-bottom: 1px solid #575757;
-				padding: 0 50px 0 50px;
-				z-index: 10; /* Used for stacking purposes */
-			}	
-
-        	#apple-title {
-				color: #ff7878;
-				cursor: pointer;
-			}
-
-        	#nav-bar > div {
-				text-align: center;
-				min-width: 125px;
-				height: 50%;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-			}
-
-        	.button {
-				text-decoration: none;
-				color: white;
-				padding: 15px;
-			}
-
-        	.button:hover {
-				color: #ff7878;
-				background-color: #3f3f3f;
-				border-radius: 20px;
-				transform: scale(1.05);
-				transition: background-color 0.5s, border 0.5s, transform 0.5s;
-			}
-
-        	#main-content {
-				border: 1px solid #121212;
-				background-color: #121212;
-				padding:  30px 100px 100px 100px;
-			}
-
-        	#employee-section {
-				display: grid;
-				grid-template-columns: 1fr 3fr;
-				grid-template-rows: repeat(4, 1fr) auto;
-			}
-
-        	#employee-section > div {
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				margin: 25px;
-				height: 350px;
-				min-width: 400px;
-				max-width: 1500px;
-				background-color: #282828;
-				border: 2px solid #575757;
-				box-sizing: border-box;
-				border-radius: 50px;
-			}
-
-        	#employee-section > div:hover {
-				transform: scale(1.03);
-				transition: background-color 0.5s, border 0.5s, transform 0.5s;
-				z-index: 1; /* Prevents element from covering nav bar */
-			}
-
-        	.employee-name {
-            	aspect-ratio: 1 / 1;
-            	display: flex;
-            	flex-direction: column;
-            	justify-content: center;
-            	align-items: center;
-            	padding: 20px;
-        	}
-
-        	.employee-name img {
-            	width: 200px;
-            	height: 200px;
-            	object-fit: cover;
-            	border-radius: 50%;
-            	margin-bottom: 20px;
-            	border: 3px solid #ff7878;
-        	}
-
-        	.employee-name span {
-            	font-size: 28px;
-            	font-weight: 500;
-            	text-align: center;
-        	}
-
-        	.employee-about {
-            	display: flex;
-            	flex-direction: row;
-				box-sizing: border-box;
-            	gap: 20px;
-        	}
-
-        	#employee-page {
-            	display: none;
-            	justify-content: center;
-            	align-items: center;
-            	font-size: 48px;
-            	color: white;
-            	background-color: transparent; 
-            	position: relative;
-        	}
-			
-			/* 
-			Color Palette:
-				Salmons/Pinks
-					#ff7878
-					#ff8886
-					#ff9894
-					#ffa7a3
-					#ffb6b2
-					#ffc5c1		
-				Greys/Blacks
-					#121212
-					#282828
-					#3f3f3f
-					#575757
-					#717171
-					#8b8b8b
-*/@keyframes shimmer {
-  0% { box-shadow: 0 0 12px #ffd700, 0 0 24px #fff8dc, inset 0 0 8px #ffec8b; }
-  50% { box-shadow: 0 0 18px #fff8dc, 0 0 36px #ffd700, inset 0 0 10px #fffacd; }
-  100% { box-shadow: 0 0 12px #ffd700, 0 0 24px #fff8dc, inset 0 0 8px #ffec8b; }
-}
-
-/* --- Golden Theme Enhancements for Vraj --- */
-
-/* Glowing golden frame for Vraj's image */
-#vraj img {
-  filter: brightness(1.25);
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 6px solid transparent;
-  background-image: linear-gradient(#ff0000, #121212),
-                    linear-gradient(135deg, #ffd700, #ffec8b, #fff8dc);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-  box-shadow:
-    0 0 12px #ffd700,
-    0 0 24px #fff8dc,
-    inset 0 0 8px #ffec8b;
-  animation: shimmer 4s infinite ease-in-out;
-}
-
-/* Animate glow shimmer */
-@keyframes shimmer {
-  0% { box-shadow: 0 0 12px #ffd700, 0 0 24px #fff8dc, inset 0 0 8px #ffec8b; }
-  50% { box-shadow: 0 0 18px #fff8dc, 0 0 36px #ffd700, inset 0 0 10px #fffacd; }
-  100% { box-shadow: 0 0 12px #ffd700, 0 0 24px #fff8dc, inset 0 0 8px #ffec8b; }
-}
-
-/* Golden glow for Vraj name */
-#vraj span {
-  color: #ffd900;
-  text-shadow:
-    0 0 8px #ffd500,
-    0 0 20px #ffd700;
-}
-
-
-#vraj + .employee-about {
-  border: 2px solid #ffd700;
-  border-radius: 20px;
-  box-shadow:
-    0 0 12px #ffd700,
-    0 0 24px #fff8dc,
-    inset 0 0 8px #ffec8b;
-  padding: 20px;
-  background: linear-gradient(145deg, #282828, #1b1b1b);
-}
-
-
-#vraj + .employee-about .button {
-  color: #ffd700;
-  border: 2px solid #ffd700;
-  border-radius: 15px;
-  padding: 10px 15px;
-  background-color: transparent;
-  transition: all 0.4s ease;
-}
-
-#vraj + .employee-about .button:hover {
-  background-color: #ffd700;
-  color: #121212;
-  box-shadow: 0 0 15px #ffd700, 0 0 25px #fff8dc;
-  transform: scale(1.08);
-
-  /* --- Golden aura + animated wings for Vraj --- */
-
-/* Circle frame (black zone around the image) */
-.vraj-frame {
-  position: relative;
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  background: radial-gradient(circle, #1a1a1a 60%, #121212 100%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: visible;
-  box-shadow: 
-    0 0 30px #ffd700,
-    0 0 60px rgba(255, 215, 0, 0.3);
-}
-
-/* Vraj’s image inside the glowing frame */
-.vraj-frame img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  filter: brightness(1.25) contrast(1.1);
-  border: 4px solid #ffd700;
-  z-index: 2;
-  position: relative;
-}
-
-  
-}
-
-    	</style>
+		<!-- Link to external CSS file -->
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/main_content_style.css">
 	</head>
 
 	<body>
     	<!-- Navigation bar -->
     	<div id="nav-bar">
-        	<h1 id="apple-title" onclick="goBack()">Apple <i class="fa-solid fa-apple-whole"></i></h1>
-        	<div><a href="#zijie" class="button" onclick="goBack()">Zijie Wu</a></div>
-        	<div><a href="#brandon" class="button" onclick="goBack()">Brandon Siscoe</a></div>
-        	<div><a href="#liam" class="button" onclick="goBack()">Liam Willis</a></div>
-        	<div><a href="#naim" class="button" onclick="goBack()">Naim Cheref</a></div>
-        	<div><a href="#vraj" class="button" onclick="goBack()">Vraj Soni</a></div>
-        	<div><a href="#michael" class="button" onclick="goBack()">Michael Foley</a></div>
+        	<a href="index.html" style="text-decoration:none;"><h1 id="apple-title">Apple <i class="fa-solid fa-apple-whole"></i></h1></a>
+        	<div><a href="#zijie" class="button">Zijie Wu</a></div>
+        	<div><a href="#brandon" class="button">Brandon Siscoe</a></div>
+        	<div><a href="#liam" class="button">Liam Willis</a></div>
+        	<div><a href="#naim" class="button">Naim Cheref</a></div>
+        	<div><a href="#vraj" class="button">Vraj Soni</a></div>
+        	<div><a href="#michael" class="button">Michael Foley</a></div>
+			<div><a href="about.html" class="button">About Us</a></div>
     	</div>
 
     	<!-- Main Page content -->
@@ -298,11 +37,13 @@
                 	<img src="assets/squidward.gif" alt="Zijie Wu">
                 	<span>Zijie Wu</span>
             	</div>
-            	<div class="employee-about">
-                	<a href="symlinks/info_0645.txt" target="_blank" class="button">Info file</a>
-                	<a href="https://cs.umb.edu/~zjnb/" target="_blank" class="button">Personal Website</a>
-					<a href="#" class="button" onclick="showEmployee('Zijie Wu')">Vanta Page</a>
-            	</div>
+            	<div class="employee-about zijie-about" onclick="window.location.href='zijie_employee_page.html';" style="cursor: pointer;">
+					<div class="zijie-globe-bg"></div>
+					<div class="zijie-buttons">
+						<a href="symlinks/info_0645.txt" target="_blank" class="button" onclick="event.stopPropagation()">Info file</a>
+						<a href="https://cs.umb.edu/~zjnb/" target="_blank" class="button" onclick="event.stopPropagation()">Personal Website</a>
+					</div>
+				</div>
 
             	<div id="brandon" class="employee-name">
 					<img src="assets/cat.PNG" alt="Brandon Siscoe">
@@ -329,128 +70,87 @@
             	<div class="employee-about">
                 	<a href="symlinks/info_0053.txt" target="_blank" class="button">Info file</a>
                 	<a href="https://www.cs.umb.edu/~naim/" target="_blank" class="button">Personal Website</a>
+					<a href="Easteregg.html" target="_blank" class="button"> </a>
             	</div>
 
-            <div id="vraj" class="employee-name">
-    <div class="vraj-frame">
-    <img src="assets/vrajdp.jpeg" alt="Vraj Soni" style="object-fit: contain; background-color: #800905">
-    </div>
-    <span class="vraj-name">Vraj Soni</span>
-</div>
-
+            	<div id="vraj" class="employee-name">
+    				<div class="vraj-frame">
+    					<img src="assets/vrajdp.jpeg" alt="Vraj Soni" style="object-fit: contain; background-color: #800905">
+    				</div>
+    				<span class="vraj-name">Vraj Soni</span>
+				</div>
             	<div class="employee-about">
                 	<a href="symlinks/info_1922.txt" target="_blank" class="button">Info file</a>
-                	<a href="#" target="_blank" class="button">Personal Website</a>
+                	<a href="https://www.cs.umb.edu/~vraj2005/" target="_blank" class="button">Personal Website</a>
             	</div>
 
             	<div id="michael" class="employee-name">
-					<img src="#" alt="Michael Foley">
+					<img src="assets/Michaels_PFP.png" alt="Michael Foley">
 					<span>Michael Foley</span>
 				</div>
             	<div class="employee-about">
                 	<a href="symlinks/info_1069.txt" target="_blank" class="button">Info file</a>
-                	<a href="#" target="_blank" class="button">Personal Website</a>
+                	<a href="https://www.cs.umb.edu/~mhf151/" target="_blank" class="button">Personal Website</a>
             	</div>
         	</div>
     	</div>
 
-    	<!-- Employee Page -->
-    	<div id="employee-page">
-        	<span id="employee-name"></span>
-    	</div>
+		<script>
+			// VANTA Globe effect for Zijie Wu section
+            let vantaSmall = null;
+            window.addEventListener('DOMContentLoaded', () => {
+                const zijieGlobeBg = document.querySelector('.zijie-globe-bg');
 
-    	<script>
-        	let vantaEffect = false;
+                if (zijieGlobeBg) {
+                    vantaSmall = VANTA.GLOBE({
+                        el: zijieGlobeBg,
+                        mouseControls: true,
+                        touchControls: true,
+                        gyroControls: false,
+                        minHeight: 350.00,
+                        minWidth: 600.00,
+                        scale: 1.0,
+                        scaleMobile: 1.0,
+                        color: 0xff7878,
+                        color2: 0xffffff,
+                        backgroundColor: 0x121212
+                    });
+                }
+            });
 
-        	function showEmployee(name) {
-            	const mainContent = document.getElementById('main-content');
-            	const employeePage = document.getElementById('employee-page');
-            	const employeeName = document.getElementById('employee-name');
+			// Falling apple effect
+			window.addEventListener('click', (e) => {
+				const tag = e.target.tagName.toLowerCase();
+				if (['a', 'button', 'input', 'label'].includes(tag)) {
+					return;
+				}
 
-            	mainContent.style.display = 'none';
-            	employeePage.style.display = 'flex';
+				if (e.target.closest('.employee-about') || e.target.closest('#nav-bar') || e.target.closest('footer') || e.target.closest('.employee-name')) {
+					return;
+				}
 
-            	if (name === 'Zijie Wu') {
-                	// Initialize VANTA Globe if not already running
-                	if (!vantaEffect) {
-                    	vantaEffect = VANTA.GLOBE({
-                        	el: "#employee-page",
-                        	mouseControls: true,
-                        	touchControls: true,
-                        	gyroControls: false,
-                        	minHeight: 830.00,
-                        	minWidth: 900.00,
-                        	scale: 1.0,
-                        	scaleMobile: 1.0,
-                        	color: 0xff7878,
-                        	backgroundColor: 0x121212
-                    	});
-                	}
-                	employeeName.style.display = 'none'; // Hide the name
-            	} else {
-                	// Destroy VANTA Globe if it exists
-                	if (vantaEffect) {
-                    	vantaEffect.destroy();
-                    	vantaEffect = null;
-                	}
-                	employeeName.style.display = 'block';
-                	employeeName.textContent = name;
-            	}
-        	}
+				const apple = document.createElement('img');
+				apple.src = 'assets/apple.png';
+				apple.className = 'falling-apple';
+				apple.style.left = e.clientX + 'px';
+				apple.style.top = e.clientY + 'px';
+				document.body.appendChild(apple);
 
-        	function goBack() {
-            	const employeePage = document.getElementById('employee-page');
-            	const mainContent = document.getElementById('main-content');
+				setTimeout(() => apple.remove(), 3000);
+			});
+        </script>
 
-            	// Destroy VANTA Globe if active
-            	if (vantaEffect) {
-                	vantaEffect.destroy();
-                	vantaEffect = null;
-            	}
-
-            	employeePage.style.display = 'none';
-            	mainContent.style.display = 'block';
-        	}
-    	</script>
-
-		<!-- ==================================================================
-		MINIMALIST SINGLE-LINE FOOTER
-		================================================================== -->
+		<!-- Footer -->
 		<footer class="footer-minimal" role="contentinfo">
-		<div class="footer-minimal__container">
-		<p class="footer-minimal__copyright">
-		&copy; 2025 Apple. No Rights Reserved. It's not that Apple.<br>
-		<a href="https://www.flaticon.com/free-icons/fruit" title="fruit icons">Our Apple tab image was created by Freepik - Flaticon (Click Here)</a>
-		</p>
-		</div>
+			<div class="footer-minimal__container">
+				<p class="footer-minimal__copyright">
+					&copy; 2025 Apple. No Rights Reserved. It's not that Apple.<br>
+					<a href="https://www.flaticon.com/free-icons/fruit" title="fruit icons">Our Apple tab image was created by Freepik - Flaticon (Click Here)</a>
+				</p>
+				<a href="https://www.umb.edu/" target="_blank" class="footer-photo">
+            		<img src="assets/umblogo.png" alt="UMB Website">
+        		</a>
+			</div>
 		</footer>
-
-
-		<!-- Optional CSS for styling (add in main stylesheet or inline) -->
-		<style>
-		.footer-minimal {
-		background-color: #282828;
-		color: #ffffff;
-		text-align: center;
-		padding: 20px 10px;
-		border-top: 1px solid #575757;
-		font-family: "Rubik", sans-serif;
-		}
-		.footer-minimal__container {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: 12px;
-		}
-		.footer-minimal__nav ul {
-    	display: flex;
-    	list-style: none;
-    	gap: 16px;
-    	padding: 0;
-    	margin: 0;
-  		}
-		</style>
-				
 	</body>
-	
 </html>

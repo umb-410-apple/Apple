@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Zijie Wu - Apple Corp</title>
+        <link rel="icon" href="assets/apple.png">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/68f1cdffaa.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.globe.min.js"></script>
+
+        <style>
+            #employee-page {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                position: relative;
+                flex: 1; 
+                min-height: 650px; 
+            }
+            
+            #slicer-ui {
+                position: fixed;
+                bottom: 110px;
+                left: 30px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                background-color: #282828;
+                border: 1px solid #575757;
+                padding: 15px 20px;
+                border-radius: 20px;
+                box-shadow: 0 0 10px #00000077;
+                z-index: 20;
+                font-family: 'Rubik', sans-serif;
+                color: white;
+            }
+            
+            #slicer-ui label {
+                font-size: 18px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 10px;
+            }
+            
+            #slicer-ui input[type="color"] {
+                width: 60px;
+                height: 25px;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+                background: none;
+            }
+        </style>
+
+        <!-- Link to external CSS file -->
+		<link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <div id="nav-bar">
+            <a href="index.html" style="text-decoration:none;"><h1 id="apple-title">Apple <i class="fa-solid fa-apple-whole"></i></h1></a>
+            <div><a href="index.html#zijie" class="button">Zijie Wu</a></div>
+            <div><a href="index.html#brandon" class="button">Brandon Siscoe</a></div>
+            <div><a href="index.html#liam" class="button">Liam Willis</a></div>
+            <div><a href="index.html#naim" class="button">Naim Cheref</a></div>
+            <div><a href="index.html#vraj" class="button">Vraj Soni</a></div>
+            <div><a href="index.html#michael" class="button">Michael Foley</a></div>
+            <div><a href="about.html" class="button">About Us</a></div>
+        </div>
+
+        <div id="employee-page"></div>
+
+        <div id="slicer-ui">
+            <label>Color1: <input type="color" id="color1" class="color-input" value="#ff7878"></label>
+            <label>Color2: <input type="color" id="color2" class="color-input" value="#ffffff"></label>
+            <label>Background: <input type="color" id="bgcolor" class="color-input" value="#121212"></label>
+        </div>
+
+        <script>
+            window.addEventListener('DOMContentLoaded', () => {
+                let vantaEffect = VANTA.GLOBE({
+                    el: "#employee-page",
+                    mouseControls: true,
+                    touchControls: true,
+                    gyroControls: false,
+                    minHeight: 200.00,
+                    minWidth: 200.00,
+                    scale: 1.0,
+                    scaleMobile: 1.0,
+                    color: 0xff7878,
+                    color2: 0xffffff,
+                    backgroundColor: 0x121212
+                });
+
+                const color1Input = document.getElementById('color1');
+                const color2Input = document.getElementById('color2');
+                const bgInput = document.getElementById('bgcolor');
+
+                color1Input.value = "#ff7878";
+                color2Input.value = "#ffffff";
+                bgInput.value = "#121212";
+
+                document.querySelectorAll('.color-input').forEach(input => {
+                    input.addEventListener('input', () => {
+                        const color1Value = parseInt(color1Input.value.replace('#', '0x'));
+                        const color2Value = parseInt(color2Input.value.replace('#', '0x'));
+                        const bgColorValue = parseInt(bgInput.value.replace('#', '0x'));
+
+                        if (vantaEffect) {
+                            vantaEffect.setOptions({
+                                color: color1Value,
+                                color2: color2Value,
+                                backgroundColor: bgColorValue
+                            });
+                        }
+                    });
+                });
+            });
+        </script>
+        
+        <footer class="footer-minimal" role="contentinfo">
+            <div class="footer-minimal__container">
+                <p class="footer-minimal__copyright">
+                    &copy; 2025 Apple. No Rights Reserved. It's not that Apple.<br>
+                    <a href="https://www.flaticon.com/free-icons/fruit" title="fruit icons">Our Apple tab image was created by Freepik - Flaticon (Click Here)</a>
+                </p>
+                <a href="https://www.umb.edu/" target="_blank" class="footer-photo">
+                    <img src="assets/umblogo.png" alt="UMB Website">
+                </a>
+            </div>
+        </footer>
+    </body>
+</html>

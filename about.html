@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>About Us - Apple Corp</title>
+        <link rel="icon" href="assets/apple.png">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/68f1cdffaa.js" crossorigin="anonymous"></script>
+        
+        <style>
+            #about-content {
+                flex: 1; 
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                padding: 50px;
+                margin-top: 70px;
+            }
+
+            .orange-page {
+                background-color: #FFA500; 
+                padding: 40px 60px;
+                border-radius: 25px;
+                text-align: center;
+                width: 80%;
+                max-width: 900px;
+                box-shadow: 0 0 20px #00000077;
+            }
+
+            .orange-page h1 {
+                color: #121212; 
+                font-size: 48px;
+                margin: 0;
+            }
+
+            .orange-page p {
+                color: #121212; 
+                font-size: 20px;
+                line-height: 1.6;
+                text-align: left;
+                text-indent: 2em;
+            }
+
+            .subtitle {
+                text-align: left;
+                font-size: 26px;
+                color: #121212;
+                margin-top: 25px;
+                font-weight: 600;
+            }
+
+            .video-container {
+                position: relative;
+                width: 100%;
+                padding-bottom: 56.25%; 
+                height: 0;
+                overflow: hidden;
+                border-radius: 15px;
+                margin-top: 20px;
+                box-shadow: 0 0 10px #00000055;
+            }
+
+            .video-container iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: none;
+                border-radius: 15px;
+            }
+
+            .falling-apple {
+                position: fixed;
+                width: 40px;
+                height: 40px;
+                pointer-events: none;
+                transform: translate(-50%, -50%) rotate(0deg);
+                animation: fallApple 3s cubic-bezier(0.2, 0.8, 0.4, 1) forwards;
+                z-index: 1000;
+            }
+
+            @keyframes fallApple {
+                0% {
+                    opacity: 1;
+                    transform: translate(-50%, -50%) rotate(0deg);
+                }
+                90% {
+                    transform: translate(-50%, calc(100vh - 100px)) rotate(360deg);
+                    opacity: 1;
+                }
+                100% {
+                    opacity: 0;
+                    transform: translate(-50%, calc(100vh - 90px)) rotate(380deg);
+                }
+            }
+        </style>
+
+        <!-- Link to external CSS file -->
+		<link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <div id="nav-bar">
+            <a href="index.html" style="text-decoration:none;"><h1 id="apple-title">Apple <i class="fa-solid fa-apple-whole"></i></h1></a>
+            <div><a href="index.html#zijie" class="button">Zijie Wu</a></div>
+            <div><a href="index.html#brandon" class="button">Brandon Siscoe</a></div>
+            <div><a href="index.html#liam" class="button">Liam Willis</a></div>
+            <div><a href="index.html#naim" class="button">Naim Cheref</a></div>
+            <div><a href="index.html#vraj" class="button">Vraj Soni</a></div>
+            <div><a href="index.html#michael" class="button">Michael Foley</a></div>
+            <div><a href="about.html" class="button">About Us</a></div>
+        </div>
+
+        <div id="about-content">
+            <div class="orange-page">
+                <h1>About Us</h1>
+                <p>Welcome to Apple Corp! We are a team of six students from UMB. Our mission is to raise the awareness of 
+                   importance of apple and help the local apple farmers to grow their businesses. We hope you enjoy our website.
+                </p>
+
+                <h2 class="subtitle">Videos About Apples:</h2>
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/0yEPKXlYQqQ"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/0MJDao-J8uo"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            window.addEventListener('click', (e) => {
+                const tag = e.target.tagName.toLowerCase();
+                if (['a', 'button', 'input', 'label'].includes(tag)) {
+                    return;
+                }
+
+                if (e.target.closest('#nav-bar') || e.target.closest('footer') || e.target.closest('.orange-page')) {
+                    return;
+                }
+
+                const apple = document.createElement('img');
+                apple.src = 'assets/apple.png';
+                apple.className = 'falling-apple';
+                apple.style.left = e.clientX + 'px';
+                apple.style.top = e.clientY + 'px';
+                document.body.appendChild(apple);
+
+                setTimeout(() => apple.remove(), 3000);
+            });
+        </script>
+
+        <footer class="footer-minimal" role="contentinfo">
+            <div class="footer-minimal__container">
+                <p class="footer-minimal__copyright">
+                    &copy; 2025 Apple. No Rights Reserved. It's not that Apple.<br>
+                    <a href="https://www.flaticon.com/free-icons/fruit" title="fruit icons">Our Apple tab image was created by Freepik - Flaticon (Click Here)</a>
+                </p>
+                <a href="https://www.umb.edu/" target="_blank" class="footer-photo">
+                    <img src="assets/umblogo.png" alt="UMB Website">
+                </a>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+Below are some work I did for this project and how I tested them.
+
+1. Vanta scene page
+
+There are four things that were added in the page: nav bar, a vanta globe scene, footer, and a slier ui for changing the color of the scene.
+I preformed serval tests:
+- On the main content page, clicked my employee about grid to make sure it directs me to the vanta scene page.
+- One the vanta scene page, click each buttons on nav bar to make sure they redirect me back to the main content page.
+- Make an new html body style to make sure the footer is always stick at the bottom regardless the height of the containers above it.
+- Adjusted the content alignment of slicer ui, adjusted the position of slicer ui to make it right above the footer.
+
+2. Mini Vanta scene on main content page
+
+I added a small vanta globe scene inside my employee about grid.
+I performed the following tests:
+- Clicked the grid to make sure it directs to the vanta scene page which shows a bigger globe.
+- Hovered the grid to make sure the hover effect is still functioning.
+- Hovered the two buttons (info and personal website) to make sure the button hover effect is also functioning.
+- Clicked the two buttons (info and personal website) to make sure I can still open my info and website by clicking the two buttons.
+
+3. About us page
+
+I created an about us page which contains nav bar, footer and small description about our team and some videos.
+I performed the following tests:
+- On nav bar in the main content page, clicked the about us button directs me to the about us page.
+- On the about us page, clicked the buttons on nav bar to make sure they are working properly.
+- Adjusted the position, width and padding for the description page.
+- Adjusted the font size and font weight (title, subtitle, normal text) in the description page.
+- Adjusted the layout of the video container, and the position of two videos. 
+
+4. Falling apple mouse event
+
+I made an mouse event, falling apple, which an apple will fall near the current position of the mouse when there is left click mouse event happening.
+I performed the following tests:
+- Left clicked the mouse on both main content page and about us page to see if it trigger the falling apple animation.
+- Adjust the how the falling apple changes its position, rotation, and opacity over time during the animation.
+- Left clicked those clickable buttons on nav bar and on other teammates' grids to make sure the animation will not play when I clicked those.
+- Left clicked the footer, the employee name container, the employee about container and the empty space on nav bar, to make sure no falling apple 
+  animation will be played under these conditions.
