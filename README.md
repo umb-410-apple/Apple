@@ -40,6 +40,23 @@ Here are my contribution to the Apple Corp website:
 
 ### Brandon
 
+For project 2, I contributed mostly at the beginning of the project in team coordination
+and using Git. My role for this project was mostly as a developer. Early on I made sure that the website had everyone's info.txt files, and that each member was able to use the Git to push their changes. I spent time working with Liam on using Git, however a lot of this work was unnecessary once we switched to Github.
+
+After the switch, I spent some time working on my own personal addition, a Threejs
+interactive visualizer. I had planned to implement this fully into our website and
+not have it be separate, but ran out of time. 
+
+Through this project I gained a lot of experience using Git in a team environment, and 
+a lot of my time was spent in the first stages of the project, getting everything started.
+
+My contributions include:
+- Improving Git workflow
+- Merging changes of other team members to work with my changes
+- Implementing my own profile info/picture
+- Adding a link to my own interactive music visualizer site
+- Some refactorization/cleaning up of code
+
 ### Vraj Soni
 
 For this project, I contributed both as a developer and a team coordinator. Early in the process, I made several improvements to our website’s structure, focusing on refining the design and CSS to create a more consistent and visually appealing layout. Later, I developed my own personal website from scratch and integrated it into my section of the Apple Corporation website, updating my profile content and links. Throughout the project, I also played a key role in helping teammates use GitHub effectively, assisting with version control commands, resolving merge issues, and maintaining smooth collaboration within the group.
